@@ -1,6 +1,6 @@
 # Lead Distribution System
 
-A full-stack lead distribution platform built for the Full Stack Developer Internship Assignment.
+A full-stack lead distribution platform.
 
 The system automatically distributes customer leads to service providers using mandatory assignment rules, fair round-robin allocation, quota management, concurrency-safe database transactions, webhook simulation, and real-time dashboard updates.
 
