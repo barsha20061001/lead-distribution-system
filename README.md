@@ -1,8 +1,10 @@
-# Lead Distribution System
+# 🚀 Lead Distribution System
 
-A full-stack lead distribution platform.
+A full-stack Lead Distribution Platform , designed to simulate a real-world provider allocation system. 👨‍💻⚡ Customers can submit service enquiries, and the platform automatically stores and distributes leads fairly among providers using intelligent business rules. 📦🎯
 
-The system automatically distributes customer leads to service providers using mandatory assignment rules, fair round-robin allocation, quota management, concurrency-safe database transactions, webhook simulation, and real-time dashboard updates.
+The system implements round-robin lead allocation, monthly quota management, duplicate lead prevention, webhook idempotency, and real-time dashboard updates. ⚖️🔄📊 Every lead is safely processed using MongoDB transactions to ensure concurrency-safe operations and database consistency. 🛡️🍃
+
+The project also includes a live provider dashboard, webhook testing tools, concurrent lead generation testing, and full cloud deployment using Vercel and MongoDB Atlas. ☁️🚀 The focus of this project is backend correctness, scalability, fairness, and real-world engineering reliability rather than complex UI design. 🔐💡
 
 ---
 
