@@ -1,3 +1,73 @@
+# Lead Distribution System
+
+A full-stack lead distribution platform built for the Full Stack Developer Internship Assignment.
+
+The system automatically distributes customer leads to service providers using mandatory assignment rules, fair round-robin allocation, quota management, concurrency-safe database transactions, webhook simulation, and real-time dashboard updates.
+
+---
+
+# Live Demo
+
+https://lead-distribution-system-xi.vercel.app
+
+---
+
+# GitHub Repository
+
+Add your GitHub repository link here.
+
+Example:
+
+https://github.com/barsha20061001/lead-distribution-system
+
+---
+
+# Tech Stack
+
+## Frontend
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+## Backend
+- Next.js API Routes
+- MongoDB Atlas
+- Mongoose
+
+## Deployment
+- Vercel
+
+---
+
+# Features Implemented
+
+## Feature 1 — Public Customer Form
+
+Route:
+
+```txt
+/request-service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
