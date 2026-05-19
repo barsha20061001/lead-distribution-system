@@ -110,93 +110,174 @@ https://github.com/barsha20061001/lead-distribution-system
 
 ---
 
-# ⚙️ Setup Instructions
 
-Follow the steps below to run this project locally.
+# ⚙️ Local Setup
 
----
-
-## 1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/lead-distribution-system.git
+```
+
+```bash
 cd lead-distribution-system
-2️⃣ Install Dependencies
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
 npm install
-3️⃣ Create Environment File
+```
 
-Create a file named .env.local in the root folder of the project.
+---
 
-.env.local
+### 3️⃣ Create Environment Variables
 
-Add your MongoDB Atlas connection string:
+Create a `.env.local` file in the root directory and add:
 
+```env
 MONGODB_URI=your_mongodb_connection_string
+```
 
 Example:
 
+```env
 MONGODB_URI=mongodb+srv://username:password@cluster0.mongodb.net/lead-distribution-system?retryWrites=true&w=majority
-4️⃣ Run the Development Server
+```
+
+---
+
+### 4️⃣ Start the Development Server
+
+```bash
 npm run dev
+```
 
-Open the project in browser:
+Frontend runs at:
 
+```txt
 http://localhost:3000
-5️⃣ Seed the Database
+```
+
+---
+
+### 5️⃣ Seed Initial Data
 
 Open this URL once in browser:
 
+```txt
 http://localhost:3000/api/seed
+```
 
-This will automatically insert:
+This automatically creates:
 
-Service 1
-Service 2
-Service 3
-Provider 1 to Provider 8
-Initial allocation states
-6️⃣ Test Main Routes
-📝 Customer Request Form
-http://localhost:3000/request-service
-📊 Provider Dashboard
-http://localhost:3000/dashboard
-🧪 Testing Panel
-http://localhost:3000/test-tools
-7️⃣ Test Database Connection
+- ✅ Services
+- ✅ Providers
+- ✅ Initial allocation states
+
+---
+
+### 6️⃣ Test Database Connection
+
+```txt
 http://localhost:3000/api/test-db
+```
 
 Expected response:
 
+```json
 {
   "success": true,
   "message": "MongoDB connected successfully"
 }
-8️⃣ Build the Project
-npm run build
-9️⃣ Start Production Build Locally
-npm start
-🔟 Deploy on Vercel
-Push the project to GitHub.
-Import the GitHub repository into Vercel.
-Add the environment variable in Vercel:
+```
+
+---
+
+# 🌐 Application Routes
+
+### 📝 Customer Request Form
+
+```txt
+http://localhost:3000/request-service
+```
+
+### 📊 Provider Dashboard
+
+```txt
+http://localhost:3000/dashboard
+```
+
+### 🧪 Test Tools
+
+```txt
+http://localhost:3000/test-tools
+```
+
+---
+
+# 🚀 Vercel Deployment
+
+### 1️⃣ Push Code to GitHub
+
+```bash
+git add .
+git commit -m "Initial Commit"
+git push
+```
+
+---
+
+### 2️⃣ Import Repository into Vercel
+
+- Open Vercel
+- Click **Add New Project**
+- Import GitHub repository
+- Configure project
+
+---
+
+### 3️⃣ Add Environment Variable
+
+Add this in Vercel Project Settings → Environment Variables:
+
+```env
 MONGODB_URI=your_mongodb_connection_string
-Deploy the project.
-After deployment, run the seed route once:
+```
+
+---
+
+### 4️⃣ Redeploy Project
+
+After adding environment variables:
+
+```txt
+Deployments → Redeploy
+```
+
+---
+
+### 5️⃣ Seed Production Database
+
+Open once after deployment:
+
+```txt
 https://your-live-url.vercel.app/api/seed
+```
 
 
 
+---
 
+# ⚠️ Important Notes
 
-
-
-
-
-
-
-
-
-
+- Add `0.0.0.0/0` in MongoDB Atlas Network Access.
+- Do NOT upload `.env.local` to GitHub.
+- Run `/api/seed` before testing dashboard.
+- MongoDB Atlas cluster must remain active.
+- Dashboard updates automatically after lead assignments.
 
 
 
