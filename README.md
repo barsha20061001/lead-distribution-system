@@ -23,11 +23,7 @@ https://lead-distribution-system-xi.vercel.app
 
 ---
 
-##  Backend API Base URL
 
-```txt
-https://lead-distribution-system-xi.vercel.app/api
-```
 
 ---
 
