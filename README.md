@@ -23,6 +23,13 @@ https://github.com/barsha20061001/lead-distribution-system
 
 # Tech Stack
 
+```txt
+Frontend : Next.js + React + Tailwind CSS
+Backend  : Next.js API Routes
+Database : MongoDB Atlas
+Deployment : Vercel
+```
+
 ## Frontend
 - Next.js
 - React
@@ -37,12 +44,7 @@ https://github.com/barsha20061001/lead-distribution-system
 ## Deployment
 - Vercel
 
-```txt
-Frontend : Next.js + React + Tailwind CSS
-Backend  : Next.js API Routes
-Database : MongoDB Atlas
-Deployment : Vercel
-```
+
 
 ---
 
