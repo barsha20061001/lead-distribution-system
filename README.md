@@ -37,14 +37,81 @@ https://github.com/barsha20061001/lead-distribution-system
 
 ---
 
-# Features Implemented
+# ✨ Features Implemented
 
-## Feature 1 — Public Customer Form
+## 📝 Public Customer Lead Form
+- Customer enquiry submission form
+- Stores leads in MongoDB database
+- Automatic provider assignment after submission
+- Service selection dropdown
+- Input validation
 
+---
+
+## 🚫 Duplicate Lead Prevention
+- Same phone number cannot create duplicate lead for same service
+- Database-level duplicate protection
+- Allows same number for different services
+
+---
+
+## 🎯 Smart Lead Distribution System
+- Exactly 3 providers assigned per lead
+- Mandatory provider rules implemented
+- Fair provider allocation
+- Persistent allocation logic
+- No duplicate provider assignment
+
+---
+
+## ⚖️ Fair Round-Robin Allocation
+- Non-random provider selection
+- Round-robin distribution logic
+- Allocation state stored in database
+- Fair load balancing between providers
+- Continues correctly after server restart
+
+---
+
+## 📊 Provider Dashboard
+- Real-time provider monitoring
+- Displays:
+  - Total quota
+  - Used quota
+  - Remaining quota
+  - Assigned leads
+- Live database data display
+
+---
+
+## 🔄 Real-Time Dashboard Updates
+- Dashboard updates automatically
+- No manual page refresh needed
+- Implemented using polling
+- Detects newly assigned leads instantly
+
+---
+
+## 📦 Monthly Provider Quota Management
+- Every provider has monthly quota
+- Quota automatically decreases on assignment
+- Prevents exceeding quota limit
+- Remaining quota tracking
+
+---
+
+## 🔐 Concurrency-Safe Lead Assignment
+- Handles simultaneous lead creation safely
+- MongoDB transaction support
+- Mongoose session handling
+- Prevents inconsistent assignments
+
+---
+
+## 🧪 Webhook Simulation Panel
 Route:
-
 ```txt
-/request-service
+/test-tools
 
 
 
