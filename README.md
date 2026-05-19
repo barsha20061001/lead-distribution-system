@@ -119,6 +119,18 @@ Deployment : Vercel
 
 ---
 
+# 🌟 Key Benefits & Uses
+
+- 🚀 Automates fair lead distribution among providers  
+- ⚡ Prevents duplicate customer requests intelligently  
+- 📊 Real-time dashboard for monitoring provider quotas  
+- 🔄 Implements round-robin allocation for balanced distribution  
+- 🛡️ Concurrency-safe lead assignment using MongoDB transactions  
+- 🔔 Webhook idempotency support to avoid duplicate processing  
+- ☁️ Fully deployed and production-ready on Vercel  
+- 📦 Scalable backend architecture using Next.js API routes  
+- 🔐 Secure MongoDB Atlas cloud database integration  
+- 🎯 Efficient monthly quota management for providers 
 
 # ⚙️ Local Setup
 
@@ -279,6 +291,8 @@ https://your-live-url.vercel.app/api/seed
 
 
 ---
+
+ 
 
 # ⚠️ Important Notes
 
