@@ -148,7 +148,26 @@ Deployment : Vercel
 - Prevents inconsistent assignments
 
 ---
- 
+
+# Short Explanation
+
+##  Allocation Algorithm
+
+Each new lead is assigned to exactly **3 providers**. First, the system assigns mandatory providers based on the selected service. After that, the remaining provider slots are filled using a **round-robin allocation** from the predefined provider pool. The round-robin position is stored in MongoDB using the `AllocationState` collection, so the allocation remains fair even after server restart.
+
+---
+
+##  Concurrency Handling
+
+Concurrency is handled using **MongoDB transactions** with **Mongoose sessions**. Lead creation, duplicate checking, provider assignment, quota update, and allocation state update are processed together inside one transaction. This helps maintain database consistency when multiple leads are created at the same time.
+
+---
+
+##  Webhook Idempotency
+
+Webhook idempotency is ensured using a `WebhookEvent` collection. Each webhook request contains a unique `eventId`, which is stored in the database. If the same webhook is triggered again, the system detects the duplicate `eventId` and safely ignores it, preventing repeated quota resets or duplicate effects.
+
+ ---
 
 #  Local Setup
 
