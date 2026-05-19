@@ -1,16 +1,57 @@
-# 🚀 Lead Distribution System
+#  Lead Distribution System
 
-A full-stack Lead Distribution Platform , designed to simulate a real-world provider allocation system. 👨‍💻⚡ Customers can submit service enquiries, and the platform automatically stores and distributes leads fairly among providers using intelligent business rules. 📦🎯
+A full-stack Lead Distribution Platform , designed to simulate a real-world provider allocation system.  Customers can submit service enquiries, and the platform automatically stores and distributes leads fairly among providers using intelligent business rules. 
 
-The system implements round-robin lead allocation, monthly quota management, duplicate lead prevention, webhook idempotency, and real-time dashboard updates. ⚖️🔄📊 Every lead is safely processed using MongoDB transactions to ensure concurrency-safe operations and database consistency. 🛡️🍃
+The system implements round-robin lead allocation, monthly quota management, duplicate lead prevention, webhook idempotency, and real-time dashboard updates.  Every lead is safely processed using MongoDB transactions to ensure concurrency-safe operations and database consistency. 
 
-The project also includes a live provider dashboard, webhook testing tools, concurrent lead generation testing, and full cloud deployment using Vercel and MongoDB Atlas. ☁️🚀 The focus of this project is backend correctness, scalability, fairness, and real-world engineering reliability rather than complex UI design. 🔐💡
+The project also includes a live provider dashboard, webhook testing tools, concurrent lead generation testing, and full cloud deployment using Vercel and MongoDB Atlas.  The focus of this project is backend correctness, scalability, fairness, and real-world engineering reliability rather than complex UI design. 
 
 ---
 
 # Live Demo
 
 https://lead-distribution-system-xi.vercel.app
+
+
+#  Project Links
+
+##  Frontend (Live Application)
+
+```txt
+https://lead-distribution-system-xi.vercel.app
+```
+
+---
+
+##  Backend API Base URL
+
+```txt
+https://lead-distribution-system-xi.vercel.app/api
+```
+
+---
+
+##  Dashboard Route
+
+```txt
+https://lead-distribution-system-xi.vercel.app/dashboard
+```
+
+---
+
+##  Request Service Route
+
+```txt
+https://lead-distribution-system-xi.vercel.app/request-service
+```
+
+---
+
+##  Test Tools Route
+
+```txt
+https://lead-distribution-system-xi.vercel.app/test-tools
+```
 
 ---
 
@@ -48,9 +89,9 @@ Deployment : Vercel
 
 ---
 
-# ✨ Features Implemented
+#  Features Implemented
 
-## 📝 Public Customer Lead Form
+##  Public Customer Lead Form
 - Customer enquiry submission form
 - Stores leads in MongoDB database
 - Automatic provider assignment after submission
@@ -59,14 +100,14 @@ Deployment : Vercel
 
 ---
 
-## 🚫 Duplicate Lead Prevention
+##  Duplicate Lead Prevention
 - Same phone number cannot create duplicate lead for same service
 - Database-level duplicate protection
 - Allows same number for different services
 
 ---
 
-## 🎯 Smart Lead Distribution System
+##  Smart Lead Distribution System
 - Exactly 3 providers assigned per lead
 - Mandatory provider rules implemented
 - Fair provider allocation
@@ -75,7 +116,7 @@ Deployment : Vercel
 
 ---
 
-## ⚖️ Fair Round-Robin Allocation
+##  Fair Round-Robin Allocation
 - Non-random provider selection
 - Round-robin distribution logic
 - Allocation state stored in database
@@ -84,7 +125,7 @@ Deployment : Vercel
 
 ---
 
-## 📊 Provider Dashboard
+##  Provider Dashboard
 - Real-time provider monitoring
 - Displays:
   - Total quota
@@ -95,7 +136,7 @@ Deployment : Vercel
 
 ---
 
-## 🔄 Real-Time Dashboard Updates
+## Real-Time Dashboard Updates
 - Dashboard updates automatically
 - No manual page refresh needed
 - Implemented using polling
@@ -103,7 +144,7 @@ Deployment : Vercel
 
 ---
 
-## 📦 Monthly Provider Quota Management
+##  Monthly Provider Quota Management
 - Every provider has monthly quota
 - Quota automatically decreases on assignment
 - Prevents exceeding quota limit
@@ -111,30 +152,18 @@ Deployment : Vercel
 
 ---
 
-## 🔐 Concurrency-Safe Lead Assignment
+##  Concurrency-Safe Lead Assignment
 - Handles simultaneous lead creation safely
 - MongoDB transaction support
 - Mongoose session handling
 - Prevents inconsistent assignments
 
 ---
+ 
 
-# 🌟 Key Benefits & Uses
+#  Local Setup
 
-- 🚀 Automates fair lead distribution among providers  
-- ⚡ Prevents duplicate customer requests intelligently  
-- 📊 Real-time dashboard for monitoring provider quotas  
-- 🔄 Implements round-robin allocation for balanced distribution  
-- 🛡️ Concurrency-safe lead assignment using MongoDB transactions  
-- 🔔 Webhook idempotency support to avoid duplicate processing  
-- ☁️ Fully deployed and production-ready on Vercel  
-- 📦 Scalable backend architecture using Next.js API routes  
-- 🔐 Secure MongoDB Atlas cloud database integration  
-- 🎯 Efficient monthly quota management for providers 
-
-# ⚙️ Local Setup
-
-### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/lead-distribution-system.git
@@ -146,7 +175,7 @@ cd lead-distribution-system
 
 ---
 
-### 2️⃣ Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
@@ -154,7 +183,7 @@ npm install
 
 ---
 
-### 3️⃣ Create Environment Variables
+### 3. Create Environment Variables
 
 Create a `.env.local` file in the root directory and add:
 
@@ -170,7 +199,7 @@ MONGODB_URI=mongodb+srv://username:password@cluster0.mongodb.net/lead-distributi
 
 ---
 
-### 4️⃣ Start the Development Server
+### 4. Start the Development Server
 
 ```bash
 npm run dev
@@ -184,7 +213,7 @@ http://localhost:3000
 
 ---
 
-### 5️⃣ Seed Initial Data
+### 5. Seed Initial Data
 
 Open this URL once in browser:
 
@@ -194,13 +223,13 @@ http://localhost:3000/api/seed
 
 This automatically creates:
 
-- ✅ Services
-- ✅ Providers
-- ✅ Initial allocation states
+-  Services
+-  Providers
+-  Initial allocation states
 
 ---
 
-### 6️⃣ Test Database Connection
+### 6. Test Database Connection
 
 ```txt
 http://localhost:3000/api/test-db
@@ -217,21 +246,21 @@ Expected response:
 
 ---
 
-# 🌐 Application Routes
+## Application Routes
 
-### 📝 Customer Request Form
+###  Customer Request Form
 
 ```txt
 http://localhost:3000/request-service
 ```
 
-### 📊 Provider Dashboard
+###  Provider Dashboard
 
 ```txt
 http://localhost:3000/dashboard
 ```
 
-### 🧪 Test Tools
+###  Test Tools
 
 ```txt
 http://localhost:3000/test-tools
@@ -239,9 +268,9 @@ http://localhost:3000/test-tools
 
 ---
 
-# 🚀 Vercel Deployment
+#  Vercel Deployment
 
-### 1️⃣ Push Code to GitHub
+### 1. Push Code to GitHub
 
 ```bash
 git add .
@@ -251,7 +280,7 @@ git push
 
 ---
 
-### 2️⃣ Import Repository into Vercel
+### 2. Import Repository into Vercel
 
 - Open Vercel
 - Click **Add New Project**
@@ -260,7 +289,7 @@ git push
 
 ---
 
-### 3️⃣ Add Environment Variable
+### 3. Add Environment Variable
 
 Add this in Vercel Project Settings → Environment Variables:
 
@@ -270,7 +299,7 @@ MONGODB_URI=your_mongodb_connection_string
 
 ---
 
-### 4️⃣ Redeploy Project
+### 4. Redeploy Project
 
 After adding environment variables:
 
@@ -280,7 +309,7 @@ Deployments → Redeploy
 
 ---
 
-### 5️⃣ Seed Production Database
+### 5. Seed Production Database
 
 Open once after deployment:
 
@@ -294,7 +323,7 @@ https://your-live-url.vercel.app/api/seed
 
  
 
-# ⚠️ Important Notes
+#  Important Notes
 
 - Add `0.0.0.0/0` in MongoDB Atlas Network Access.
 - Do NOT upload `.env.local` to GitHub.
