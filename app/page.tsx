@@ -35,22 +35,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="mt-10 text-left bg-gray-100 p-5 rounded-xl">
-          <h2 className="font-bold text-xl mb-3 text-black">
-            Features Implemented
-          </h2>
-
-          <ul className="space-y-2 text-black">
-            <li>✅ Lead creation</li>
-            <li>✅ Duplicate prevention</li>
-            <li>✅ Fair provider allocation</li>
-            <li>✅ Round-robin distribution</li>
-            <li>✅ Monthly quota handling</li>
-            <li>✅ Real-time dashboard updates</li>
-            <li>✅ Webhook idempotency</li>
-            <li>✅ Concurrency testing</li>
-          </ul>
-        </div>
+        
       </div>
     </main>
   );
