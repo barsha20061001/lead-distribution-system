@@ -15,13 +15,6 @@ https://lead-distribution-system-xi.vercel.app
 
 #  Project Links
 
-##  Frontend (Live Application)
-
-```txt
-https://lead-distribution-system-xi.vercel.app
-```
-
----
 
 
 
