@@ -14,9 +14,6 @@ https://lead-distribution-system-xi.vercel.app
 
 # GitHub Repository
 
-Add your GitHub repository link here.
-
-Example:
 
 https://github.com/barsha20061001/lead-distribution-system
 
